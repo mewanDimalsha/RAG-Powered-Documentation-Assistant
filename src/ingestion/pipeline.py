@@ -1,6 +1,7 @@
 from src.ingestion.loader import DocumentLoader
 from src.ingestion.chunker import ProductionChunker
 from src.retrieval.vector_store import VectorStore
+from src.retrieval.bm25_retriever import BM25Retriever
 
 
 class IngestionPipeline:
@@ -12,8 +13,9 @@ class IngestionPipeline:
     def __init__(self, docs_directory: str = "./docs"):
         self.docs_directory = docs_directory
         self.loader = DocumentLoader()
-        self.chunker = ProductionChunker(chunk_size=512, chunk_overlap=50)
+        self.chunker = ProductionChunker(chunk_size=512, overlap=50)
         self.vector_store = VectorStore()
+        self.bm25 = BM25Retriever()
 
     def run(self) -> dict:
         print("\n🚀 Starting ingestion pipeline...\n")
@@ -32,6 +34,9 @@ class IngestionPipeline:
         # Step 3: Embed + Store
         print("\nStep 3/3: Embedding and storing...")
         indexed = self.vector_store.add_documents(chunks)
+
+        print("\nStep 4/4: Building BM25 keyword index...")
+        self.bm25.build_index(chunks)
 
         result = {
             "status": "success",

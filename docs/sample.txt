@@ -1,0 +1,35 @@
+Refund Policy
+Our refund policy allows customers to return items within 30 days.
+Items must be unopened and in original condition.
+To request a refund, contact support@company.com.
+Refunds are processed within 5-7 business days.
+Digital products are non-refundable once downloaded.
+Shipping costs are non-refundable unless the item was defective.
+
+Privacy Policy
+We do not sell customer data to third parties.
+All data is encrypted at rest and in transit using AES-256.
+Users can request data deletion at any time by emailing privacy@company.com.
+We retain logs for 90 days for security purposes.
+Cookies are used only for session management and analytics.
+
+Payment Policy
+We accept Visa, Mastercard, American Express and PayPal.
+All payments are processed through Stripe.
+Invoices are issued automatically on purchase.
+For enterprise billing, contact billing@company.com.
+Payment terms for enterprise customers are net-30.
+
+Support Policy
+Support is available Monday to Friday, 9am to 6pm GMT.
+Response time for standard tickets is 24 hours.
+Priority support is available for enterprise customers.
+Critical issues are escalated within 2 hours.
+You can reach support at support@company.com or via live chat.
+
+Data Retention Policy
+Customer data is retained for 7 years for compliance purposes.
+Deleted accounts have their data anonymised within 30 days.
+Audit logs are immutable and retained for 5 years.
+Backups are performed daily and stored for 90 days.
+We do not retain data for users who have requested deletion.
