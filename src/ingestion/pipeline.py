@@ -1,3 +1,7 @@
+import utils.clients
+import utils.http_session
+import utils.transport
+import utils.session
 from src.ingestion.loader import DocumentLoader
 from src.ingestion.chunker import ProductionChunker
 from src.retrieval.vector_store import VectorStore
